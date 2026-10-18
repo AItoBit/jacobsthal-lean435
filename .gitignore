@@ -1,0 +1,9 @@
+/.lake/
+/.source-cache/
+/external/
+/vendor/StrongPNT/
+/scripts/prepare_vendor.py
+*.olean
+*.ilean
+*.trace
+*.log

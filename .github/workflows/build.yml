@@ -1,0 +1,31 @@
+name: Jacobsthal compatibility candidate
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  proof:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    env:
+      LEAN_NUM_THREADS: 2
+    steps:
+      - uses: actions/checkout@v4
+      - name: Recover pinned external StrongPNT source
+        run: python3 scripts/bootstrap_strongpnt.py
+      - uses: leanprover/lean-action@v1
+        with:
+          build-args: '--wfail OAI.NumberTheory.Jacobsthal.Main Audit'
+      - name: Audit both actual closed theorem dependencies
+        shell: bash
+        run: |
+          set -euo pipefail
+          lake env lean -j2 -DwarningAsError=true Audit.lean | tee axiom-report.txt
+          grep -F "'OAI.Erdos970.Erdos970Final.erdos_970_quadratic' depends on axioms: [propext, Classical.choice, Quot.sound]" axiom-report.txt
+          grep -F "'OAI.Erdos970.Erdos970Final.erdos_970_iterated_log' depends on axioms: [propext, Classical.choice, Quot.sound]" axiom-report.txt
+          ! grep -E 'sorryAx|trustCompiler|ofReduceBool' axiom-report.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: axiom-report
+          path: axiom-report.txt
+          if-no-files-found: ignore
