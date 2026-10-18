@@ -16,6 +16,30 @@ jobs:
           build: false
           test: false
           lint: false
+      - name: Restore prior source-layout artifacts
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            .lake/build
+            vendor/PrimeNumberTheoremAnd/.lake/build
+            vendor/AbsorptionCutoff/.lake/build
+            external/StrongPNT/.lake/build
+          key: jac435-legacy-layout-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: jac435-
+      - name: Migrate prior support-package artifacts
+        shell: bash
+        run: |
+          set -euo pipefail
+          for package in PrimeNumberTheoremAnd AbsorptionCutoff; do
+            if [ -d "vendor/$package/.lake/build" ]; then
+              mkdir -p ".lake/packages/$package/.lake/build"
+              cp -a "vendor/$package/.lake/build/." ".lake/packages/$package/.lake/build/"
+            fi
+          done
+          if [ -d external/StrongPNT/.lake/build ]; then
+            mkdir -p .lake/packages/StrongPNT/.lake/build
+            cp -a external/StrongPNT/.lake/build/. .lake/packages/StrongPNT/.lake/build/
+          fi
       - name: Restore incremental proof artifacts
         id: proof-cache
         uses: actions/cache/restore@v4

@@ -107,16 +107,16 @@ noncomputable def mvPolynomialLocalQuotientAlgEquiv
     letI : CommRing (Localization.AtPrime
       (p.comap (MvPolynomial.map (σ := σ) (evalRingHom a)))) := inferInstance
     (Localization.AtPrime (p.comap (MvPolynomial.map (σ := σ) (evalRingHom a))) ⧸
-      (Ideal.span (Set.singleton (algebraMap (MvPolynomial σ R[X])
+      (Ideal.span {(algebraMap (MvPolynomial σ R[X])
         (Localization.AtPrime (p.comap (MvPolynomial.map (σ := σ) (evalRingHom a))))
-          (MvPolynomial.C (σ := σ) (X - C a)))) :
+          (MvPolynomial.C (σ := σ) (X - C a)))} :
         Ideal (Localization.AtPrime (p.comap (MvPolynomial.map (σ := σ) (evalRingHom a))))))
           ≃ₐ[R] Localization.AtPrime p := by
   letI : CommRing (Localization.AtPrime
     (p.comap (MvPolynomial.map (σ := σ) (evalRingHom a)))) := inferInstance
-  have h : (Ideal.span (Set.singleton (algebraMap (MvPolynomial σ R[X])
+  have h : (Ideal.span {(algebraMap (MvPolynomial σ R[X])
       (Localization.AtPrime (p.comap (MvPolynomial.map (σ := σ) (evalRingHom a))))
-        (MvPolynomial.C (σ := σ) (X - C a)))) :
+        (MvPolynomial.C (σ := σ) (X - C a)))} :
           Ideal (Localization.AtPrime (p.comap (MvPolynomial.map (σ := σ) (evalRingHom a))))) =
       (RingHom.ker (MvPolynomial.map (σ := σ) (evalRingHom a))).map
         (algebraMap (MvPolynomial σ R[X])

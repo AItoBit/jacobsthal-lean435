@@ -1807,7 +1807,7 @@
     "OAI/NumberTheory/Jacobsthal/Siegel/LocalFractionAlgebra.lean": "ad38220e30d5dfa9caf29460f5078261f0ed4b3525f0987be77338c59450fe9d",
     "OAI/NumberTheory/Jacobsthal/Siegel/LocalizeInvariantDerivationLogCoordinate.lean": "82b101d9e76d441b22395a4392980335bf1e301eb32b1a06c8111c7cf5e8df21",
     "OAI/NumberTheory/Jacobsthal/Siegel/LocalLengthMulProjectiveClosureDegree.lean": "88aad470bcfd5184f76e38b87e13ff7dad252efa4157425b6f828649a7f300b8",
-    "OAI/NumberTheory/Jacobsthal/Siegel/LocalQuotientEquiv.lean": "306b6530ab0f7e0170f578eace856941843769c44e426a5b2d21ce3ccce20557",
+    "OAI/NumberTheory/Jacobsthal/Siegel/LocalQuotientEquiv.lean": "6385325faa4999e5003d5ef63f8e3c7529e50fc776013aefb14b43637b4fa5cf",
     "OAI/NumberTheory/Jacobsthal/Siegel/LogarithmicForm.lean": "9a9f4f3f51822c15f3e5db0e35074512db251e7ab6430adf819c32256671798c",
     "OAI/NumberTheory/Jacobsthal/Siegel/LogarithmicFormLemma.lean": "d002eb6bd9ce8da6b7179c4dfe748de61635a1663da6c9f2ae3c6e26acc4ea47",
     "OAI/NumberTheory/Jacobsthal/Siegel/Main.lean": "78f9267ab2e75ead7a6a3dc1331a80fbc921e64ff2435afd965e8c51a60e2fdf",
@@ -1921,7 +1921,7 @@
   "compatibility_changes": [
     {
       "path": "OAI/NumberTheory/Jacobsthal/Siegel/LocalQuotientEquiv.lean",
-      "change": "Disambiguate singleton set around algebraMap using explicit Set.singleton; no theorem type or hypotheses changed."
+      "change": "Disambiguate singleton-set syntax by parenthesizing the algebraMap element inside standard singleton notation; preserve original simp rewrite patterns, theorem types, and hypotheses."
     },
     {
       "path": "OAI/NumberTheory/Jacobsthal/Siegel/MonicSMulRegularQuotientMapC.lean",

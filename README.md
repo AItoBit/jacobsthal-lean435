@@ -19,7 +19,7 @@ and prints their transitive axioms.
 
 The initial recovered 819 files matched all original Git blob hashes after LF
 normalization. The compatibility changes recorded in `provenance.json` currently
-disambiguate two singleton sets with `Set.singleton`, replace deprecated order
+disambiguate two singleton sets by parenthesizing their elements, replace deprecated order
 and coercion API names, and raise one theorem-local elaboration heartbeat budget. These edits preserve the mathematical statements and hypotheses.
 
 ## Reproduce
