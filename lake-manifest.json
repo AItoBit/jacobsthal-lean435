@@ -111,31 +111,40 @@
       "configFile": "lakefile.toml"
     },
     {
-      "type": "path",
+      "url": "https://github.com/AItoBit/jacobsthal-pnt-lean435.git",
+      "type": "git",
+      "subDir": null,
+      "scope": "",
+      "rev": "4698982c635e019c83b6216cbd9777e0a7f89198",
       "name": "PrimeNumberTheoremAnd",
-      "scope": "",
-      "dir": "vendor/PrimeNumberTheoremAnd",
+      "manifestFile": "lake-manifest.json",
+      "inputRev": "4698982c635e019c83b6216cbd9777e0a7f89198",
       "inherited": false,
-      "configFile": "lakefile.toml",
-      "manifestFile": "lake-manifest.json"
+      "configFile": "lakefile.toml"
     },
     {
-      "type": "path",
+      "url": "https://github.com/AItoBit/jacobsthal-strongpnt-lean435.git",
+      "type": "git",
+      "subDir": null,
+      "scope": "",
+      "rev": "b96d1670fb7fabf7ea55d67cc3bb69ce1f054953",
       "name": "StrongPNT",
-      "scope": "",
-      "dir": "external/StrongPNT",
+      "manifestFile": "lake-manifest.json",
+      "inputRev": "b96d1670fb7fabf7ea55d67cc3bb69ce1f054953",
       "inherited": false,
-      "configFile": "lakefile.toml",
-      "manifestFile": "lake-manifest.json"
+      "configFile": "lakefile.toml"
     },
     {
-      "type": "path",
-      "name": "AbsorptionCutoff",
+      "url": "https://github.com/AItoBit/jacobsthal-absorption-lean435.git",
+      "type": "git",
+      "subDir": null,
       "scope": "",
-      "dir": "vendor/AbsorptionCutoff",
+      "rev": "4cab242c97bd91d5452af8e5f5f25cf23810fa97",
+      "name": "AbsorptionCutoff",
+      "manifestFile": "lake-manifest.json",
+      "inputRev": "4cab242c97bd91d5452af8e5f5f25cf23810fa97",
       "inherited": false,
-      "configFile": "lakefile.toml",
-      "manifestFile": "lake-manifest.json"
+      "configFile": "lakefile.toml"
     }
   ],
   "name": "jacobsthalLean435",

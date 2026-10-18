@@ -10,24 +10,28 @@ jobs:
       LEAN_NUM_THREADS: 2
     steps:
       - uses: actions/checkout@v4
-      - name: Recover pinned external StrongPNT source
-        run: python3 scripts/bootstrap_strongpnt.py
+      - name: Prepare pinned Git dependencies and Mathlib cache
+        uses: leanprover/lean-action@v1
+        with:
+          build: false
+          test: false
+          lint: false
       - name: Restore incremental proof artifacts
         id: proof-cache
         uses: actions/cache/restore@v4
         with:
           path: |
             .lake/build
-            vendor/PrimeNumberTheoremAnd/.lake/build
-            vendor/AbsorptionCutoff/.lake/build
-            external/StrongPNT/.lake/build
+            .lake/packages/PrimeNumberTheoremAnd/.lake/build
+            .lake/packages/AbsorptionCutoff/.lake/build
+            .lake/packages/StrongPNT/.lake/build
           key: jac435-${{ hashFiles('lean-toolchain', 'lake-manifest.json') }}-${{ hashFiles('provenance.json', 'OAI/**/*.lean', 'vendor/**/*.lean', 'patches/*.patch') }}-${{ github.run_id }}-${{ github.run_attempt }}
           restore-keys: |
             jac435-${{ hashFiles('lean-toolchain', 'lake-manifest.json') }}-${{ hashFiles('provenance.json', 'OAI/**/*.lean', 'vendor/**/*.lean', 'patches/*.patch') }}-
             jac435-${{ hashFiles('lean-toolchain', 'lake-manifest.json') }}-
-      - uses: leanprover/lean-action@v1
-        with:
-          build-args: '--wfail OAI.NumberTheory.Jacobsthal.Main Audit'
+            jac435-
+      - name: Build both complete closed theorem closures
+        run: lake --wfail build OAI.NumberTheory.Jacobsthal.Main Audit
       - name: Audit both actual closed theorem dependencies
         shell: bash
         run: |
@@ -48,7 +52,7 @@ jobs:
         with:
           path: |
             .lake/build
-            vendor/PrimeNumberTheoremAnd/.lake/build
-            vendor/AbsorptionCutoff/.lake/build
-            external/StrongPNT/.lake/build
+            .lake/packages/PrimeNumberTheoremAnd/.lake/build
+            .lake/packages/AbsorptionCutoff/.lake/build
+            .lake/packages/StrongPNT/.lake/build
           key: ${{ steps.proof-cache.outputs.cache-primary-key }}

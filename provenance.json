@@ -1915,31 +1915,7 @@
     "OAI/NumberTheory/Jacobsthal/Sieve/TagCRTPeriodicity.lean": "325839976b9bbbf2fca2bbfbaabf977f1e740cb4f326ce73bd09a29f2735b304",
     "OAI/NumberTheory/Jacobsthal/Sieve/TagPrimeSieveLower.lean": "d6de5539f16f563d9a7228403cac777636c89266328c18f925abbd0cbc73c3df",
     "OAI/NumberTheory/Jacobsthal/Sieve/TagUnitSieveLower.lean": "af8db14a3ccb0e7287240ef2a3399050103b56f98b34db2a4ac46fc594bc7560",
-    "OAI/NumberTheory/Jacobsthal/Sieve/UniformExponentialOccupation.lean": "3fcdc3374b0ce98ff732b018c81a62f7073d94a1aced2af787110552a8ad10bc",
-    "vendor/PrimeNumberTheoremAnd/PrimeNumberTheoremAnd/Erdos970/Auxiliary.lean": "e22d13e51a1c5c9b6b7e8649469b95d81e54edd1afc126152061242e60423b5a",
-    "vendor/PrimeNumberTheoremAnd/PrimeNumberTheoremAnd/Erdos970/Consequences.lean": "98ee935f8b00b09fa1535b448679444dbbcf621f496e0a46ff4bdadc02f7986e",
-    "vendor/PrimeNumberTheoremAnd/PrimeNumberTheoremAnd/Erdos970/Defs.lean": "eee486ed4274d4b35446dc149f871ef7e5492d0c4b7ae5412b37b8f9b44b4975",
-    "vendor/PrimeNumberTheoremAnd/PrimeNumberTheoremAnd/Erdos970/EulerMaclaurin.lean": "a7df60d3653cb8660b82aeae4d2aaa7145dc824ee643b4741e315bcc674ec4cc",
-    "vendor/PrimeNumberTheoremAnd/PrimeNumberTheoremAnd/Erdos970/Fourier.lean": "a21d6432f41a3cada598dba1ad9ceae6a48819be7cb99b06de65ab15c7b66fda",
-    "vendor/PrimeNumberTheoremAnd/PrimeNumberTheoremAnd/Erdos970/HadamardSupport.lean": "a0f61289b82b68afc3b06080bf01c94f4460f3c95d27fe447a0dde427960d2e4",
-    "vendor/PrimeNumberTheoremAnd/PrimeNumberTheoremAnd/Erdos970/MellinCalculus.lean": "7930ab19123821aff6a6192cca50b43182282cb69484b0753bc7992735973912",
-    "vendor/PrimeNumberTheoremAnd/PrimeNumberTheoremAnd/Erdos970/MertensClassical.lean": "37b0afe031bec4dea9fe77843b63ba2274c1718510c3e7b52678380bcbb9ae01",
-    "vendor/PrimeNumberTheoremAnd/PrimeNumberTheoremAnd/Erdos970/Rectangle.lean": "c1ac1588f8aa36ca6cce8a224f03f9293d6aa86add4bcef856b6fbbb7d684a62",
-    "vendor/PrimeNumberTheoremAnd/PrimeNumberTheoremAnd/Erdos970/ResidueCalcOnRectangles.lean": "85d3dbda748e0068a094261d833f20fa3e924867778ed0772b647bbd64ebf3a6",
-    "vendor/PrimeNumberTheoremAnd/PrimeNumberTheoremAnd/Erdos970/SmoothExistence.lean": "358de0d82ac0575776c34dd6e66092f16580f8844f1843c6521e4e30a107a93b",
-    "vendor/PrimeNumberTheoremAnd/PrimeNumberTheoremAnd/Erdos970/Sobolev.lean": "7eb6ec9ffffd0bfd8447e38b56dbeede8e7c5e2cefd71c0b47210c02d8223165",
-    "vendor/PrimeNumberTheoremAnd/PrimeNumberTheoremAnd/Erdos970/Wiener.lean": "f2fe424c422598a1ca2c63ac1035472115bfc749440c2a90d019ededf033c2fc",
-    "vendor/PrimeNumberTheoremAnd/PrimeNumberTheoremAnd/Erdos970/ZetaBounds.lean": "9ef231a799661c1427f23283f97705934edcf3edfd9fdc931c9b517dea2cf676",
-    "vendor/PrimeNumberTheoremAnd/PrimeNumberTheoremAnd/Erdos970/ZetaConj.lean": "a8fb9c968edce35203fd8af8202d958b9dc54e86303dfdddc149c3ad33b79397",
-    "vendor/PrimeNumberTheoremAnd/PrimeNumberTheoremAnd/Erdos970/Tactic/AdditiveCombination.lean": "80bc9e124e078093078d3d425e3099fcada4017ed590f09aae78873d0298eef9",
-    "vendor/PrimeNumberTheoremAnd/PrimeNumberTheoremAnd/Erdos970/Mathlib/Analysis/Asymptotics/Asymptotics.lean": "ed6a6f94e8ffa4e044348a1c42962ebb929955c9082643139205ce369141d321",
-    "vendor/PrimeNumberTheoremAnd/PrimeNumberTheoremAnd/Erdos970/Mathlib/Analysis/SpecialFunctions/Log/Basic.lean": "7a92a2aebfed9eaedaabdb4089cde4af4f85137d816790d68cc46b5cad56fbb1",
-    "vendor/PrimeNumberTheoremAnd/PrimeNumberTheoremAnd/Erdos970/Mathlib/Algebra/Notation/Support.lean": "cae01d85a685b04574a3e7e973493583bdbde5d3fabd2b4dab07f88df49a00f1",
-    "vendor/AbsorptionCutoff/AbsorptionCutoff/Supercritical/Renewal.lean": "9a1da707ddc7791e973fdbfe9f9964b35edc99ce5b0f51e03c13d02d2e79d10b",
-    "vendor/AbsorptionCutoff/AbsorptionCutoff/Supercritical/RenewalAbel.lean": "e418359d9f3d9fac7d5b55e38969f0793b3d5623c9133d351bb36e0396db92df",
-    "vendor/AbsorptionCutoff/AbsorptionCutoff/Supercritical/RenewalApprox.lean": "236a3decae51cdbe8edc4cebdd2a005f6682aa8caa994e82fe98a13a8872efc4",
-    "vendor/AbsorptionCutoff/AbsorptionCutoff/Supercritical/RenewalKernel.lean": "e4a4ed2c877fff041e5f954731334aa32a1e3838e8a9fa5b21f2b44b21140b9b",
-    "vendor/AbsorptionCutoff/AbsorptionCutoff/Supercritical/RenewalSinc.lean": "67f198c07be9e3f2d0f31facf539e78f985c122aea94939bdd7150072217f349"
+    "OAI/NumberTheory/Jacobsthal/Sieve/UniformExponentialOccupation.lean": "3fcdc3374b0ce98ff732b018c81a62f7073d94a1aced2af787110552a8ad10bc"
   },
   "source_recovery_original_oai_blob_mismatches": [],
   "compatibility_changes": [
@@ -1967,5 +1943,20 @@
       "path": "OAI/NumberTheory/Jacobsthal/Sieve/EulerProductRatio.lean",
       "change": "Raise the local maxHeartbeats budget for int_mem_primeResidueSet from 200000 to 1000000 after deterministic whnf timeout on Lean4.35; same statement and proof."
     }
-  ]
+  ],
+  "curated_git_dependencies": {
+    "PrimeNumberTheoremAnd": {
+      "url": "https://github.com/AItoBit/jacobsthal-pnt-lean435.git",
+      "commit": "4698982c635e019c83b6216cbd9777e0a7f89198"
+    },
+    "StrongPNT": {
+      "url": "https://github.com/AItoBit/jacobsthal-strongpnt-lean435.git",
+      "commit": "b96d1670fb7fabf7ea55d67cc3bb69ce1f054953"
+    },
+    "AbsorptionCutoff": {
+      "url": "https://github.com/AItoBit/jacobsthal-absorption-lean435.git",
+      "commit": "4cab242c97bd91d5452af8e5f5f25cf23810fa97"
+    }
+  },
+  "strongpnt_patch_addition_audit": "strongpnt-patch-additions.json"
 }

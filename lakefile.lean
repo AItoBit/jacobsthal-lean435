@@ -1,25 +1,16 @@
 import Lake
-open System Lake DSL
+open Lake DSL
 
 package jacobsthalLean435 where
   version := v!"0.1.0"
   leanOptions := #[⟨`autoImplicit, false⟩]
 
--- Fetch the externally pinned StrongPNT source before resolving its curated
--- package configuration. This follows OpenAI's pre-resolution patch ordering.
-run_cmd do
-  let env ← Lean.getEnv
-  if let some root := Lake.dirExt.getState env then
-    let result ← Lean.Elab.Command.liftIO <| IO.Process.output {
-      cmd := "python3"
-      args := #[(root / "scripts" / "bootstrap_strongpnt.py").toString]
-    }
-    unless result.exitCode == 0 do
-      throwError "StrongPNT source preparation failed:\n{result.stderr}"
-
-require PrimeNumberTheoremAnd from "vendor/PrimeNumberTheoremAnd"
-require StrongPNT from "external/StrongPNT"
-require AbsorptionCutoff from "vendor/AbsorptionCutoff"
+require PrimeNumberTheoremAnd from git
+  "https://github.com/AItoBit/jacobsthal-pnt-lean435.git" @ "4698982c635e019c83b6216cbd9777e0a7f89198"
+require StrongPNT from git
+  "https://github.com/AItoBit/jacobsthal-strongpnt-lean435.git" @ "b96d1670fb7fabf7ea55d67cc3bb69ce1f054953"
+require AbsorptionCutoff from git
+  "https://github.com/AItoBit/jacobsthal-absorption-lean435.git" @ "4cab242c97bd91d5452af8e5f5f25cf23810fa97"
 require mathlib from git
   "https://github.com/leanprover-community/mathlib4.git" @ "065356127b1dc0016f66b7283ce0ce2c4055aa55"
 

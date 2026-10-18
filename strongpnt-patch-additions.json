@@ -1,0 +1,44 @@
+[
+  {
+    "path": "StrongPNT/Erdos970/PNT1_ComplexAnalysis.lean",
+    "sha256": "084bed65b3ddf503d70e4bca28529e65242564999477524d0e48ded209c358cc",
+    "new_file_mode": true,
+    "old_file": "/dev/null"
+  },
+  {
+    "path": "StrongPNT/Erdos970/PNT2_LogDerivative.lean",
+    "sha256": "f44c8df573d3c3bc99b1920673a43a0c09089f102a5cb4a09443eebd086f3a0a",
+    "new_file_mode": true,
+    "old_file": "/dev/null"
+  },
+  {
+    "path": "StrongPNT/Erdos970/PNT3_RiemannZeta.lean",
+    "sha256": "fb916e3b714f3812c6139b6d5c768194617ad1b68696ffb64a54600c4e1dfbdc",
+    "new_file_mode": true,
+    "old_file": "/dev/null"
+  },
+  {
+    "path": "StrongPNT/Erdos970/PNT4_ZeroFreeRegion.lean",
+    "sha256": "d78468b958ee230032a3e69ba66703bf855feeef3053b2f9200d7c679c3c7e93",
+    "new_file_mode": true,
+    "old_file": "/dev/null"
+  },
+  {
+    "path": "StrongPNT/Erdos970/PNT5_Strong.lean",
+    "sha256": "ad8793231c89ee13bf5dcf5263c42b184e31bfc38d696a2c22138a366f875386",
+    "new_file_mode": true,
+    "old_file": "/dev/null"
+  },
+  {
+    "path": "StrongPNT/Erdos970/Z0.lean",
+    "sha256": "9590650aa50138c93dc7dcd7ee014c82a25c77bf410b3d99eea374449b11eb52",
+    "new_file_mode": true,
+    "old_file": "/dev/null"
+  },
+  {
+    "path": "StrongPNT/Erdos970/ZetaZeroFree.lean",
+    "sha256": "07a7a93d1121bed8e2c111437ae0c1bf5e584dc3c956e8d1b0dccd1a9afa13c1",
+    "new_file_mode": true,
+    "old_file": "/dev/null"
+  }
+]
