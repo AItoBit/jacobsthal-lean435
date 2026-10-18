@@ -347,7 +347,7 @@ theorem finrank_normal_image_of_not_le
       Module.finrank K V - Module.finrank K T := by
   have hs : LinearMap.range (T.mkQ.domRestrict (LinearMap.ker ω)) = ⊤ := by
     rw [LinearMap.range_domRestrict, Submodule.map_mkQ_eq_top]
-    obtain ⟨x, hxT, hxω⟩ := SetLike.not_le_iff_exists.mp h
+    obtain ⟨x, hxT, hxω⟩ := IsConcreteLE.not_le_iff_exists.mp h
     apply top_unique
     rw [← LinearMap.span_singleton_sup_ker_eq_top ω hxω]
     exact sup_le_sup_right ((Submodule.span_singleton_le_iff_mem _ _).mpr hxT) _

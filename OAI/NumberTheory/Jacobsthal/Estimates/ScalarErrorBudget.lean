@@ -171,7 +171,7 @@ private theorem restricted_phase (H T : ℕ) [NeZero H] [NeZero T]
       ((j.val : ZMod (H*T))*(u : ZMod (H*T))) =
       j*(ZMod.unitsMap (dvd_mul_left T H) u : ZMod T) := by
     simp only [map_mul, map_natCast, ZMod.natCast_zmod_val,
-      ErdosKloosterman.PrimePower.reduction, ZMod.unitsMap_def, Units.coe_map, MonoidHom.coe_coe]
+      ErdosKloosterman.PrimePower.reduction, ZMod.unitsMap_def, Units.coe_map, MonoidHom.coe_ofClass]
   rw [hred]
   have hc : ZMod.stdAddChar (-j*(a : ZMod T)) *
       ZMod.stdAddChar (j*(ZMod.unitsMap (dvd_mul_left T H) u : ZMod T)) =

@@ -1096,7 +1096,6 @@
     "StrongPNT.Erdos970.Z0",
     "StrongPNT.Erdos970.ZetaZeroFree"
   ],
-  "original_oai_blob_mismatches": [],
   "retained_source_sha256": {
     "OAI/NumberTheory/Jacobsthal/Main.lean": "af7a5b9b39fd4fdf5d5513d098c4c8052eefc3caeef64193553ff6efa94df31a",
     "OAI/NumberTheory/Jacobsthal/Model.lean": "16601a60e9ecdad3b037a9b0e20bd45f49d5aa0966f3765d69761dbb18840741",
@@ -1310,7 +1309,7 @@
     "OAI/NumberTheory/Jacobsthal/Estimates/RieszTermCalculus.lean": "42b6c3eb94b141d50c0f3d8b30cc083ccd76d4552a75fab14cb8d1d51bf93f17",
     "OAI/NumberTheory/Jacobsthal/Estimates/RootCutoffSurvivors.lean": "5c5508de15fabce88893197914f29389770d26ce02296dfe040c9a9774637aaa",
     "OAI/NumberTheory/Jacobsthal/Estimates/RoughRecursion.lean": "2c65bfa46050667fe6adc1c6e148f95b8a2e55fd4819180e3b39924340de02ad",
-    "OAI/NumberTheory/Jacobsthal/Estimates/ScalarErrorBudget.lean": "a58dbb568d541e343bbabb4959643fcd694aa29ad0f67f58c6b90da7076dcecc",
+    "OAI/NumberTheory/Jacobsthal/Estimates/ScalarErrorBudget.lean": "85d226dd220ec43dff0aeecbdde94086f8e519dbd61653e61ff492a5df944bc1",
     "OAI/NumberTheory/Jacobsthal/Estimates/ScalarFreeGate.lean": "b330c949995aa2d9d6748a1b8a4a96457c08d5f3e96ba614fce6b8b55652717b",
     "OAI/NumberTheory/Jacobsthal/Estimates/ScalarTailRecurrence.lean": "c6b0f943a36cefff02c1ab24875e1d30e64ffd3d45564fd2c5b4db82d1d73542",
     "OAI/NumberTheory/Jacobsthal/Estimates/ScaledOriginalTail.lean": "a7150bc408704f6b053e1737bfc5b34a66cef35fa962bd3abfd4f07b9b7378b9",
@@ -1808,13 +1807,13 @@
     "OAI/NumberTheory/Jacobsthal/Siegel/LocalFractionAlgebra.lean": "ad38220e30d5dfa9caf29460f5078261f0ed4b3525f0987be77338c59450fe9d",
     "OAI/NumberTheory/Jacobsthal/Siegel/LocalizeInvariantDerivationLogCoordinate.lean": "82b101d9e76d441b22395a4392980335bf1e301eb32b1a06c8111c7cf5e8df21",
     "OAI/NumberTheory/Jacobsthal/Siegel/LocalLengthMulProjectiveClosureDegree.lean": "88aad470bcfd5184f76e38b87e13ff7dad252efa4157425b6f828649a7f300b8",
-    "OAI/NumberTheory/Jacobsthal/Siegel/LocalQuotientEquiv.lean": "2bbd93e96d9edb0daf49c0e19fb2c5624d781b6b1c5d3cf36e3872650824307a",
-    "OAI/NumberTheory/Jacobsthal/Siegel/LogarithmicForm.lean": "cc4d8c8929bca0f087edd1318d9ebd87992cf9ea2e2619e92723f0110cfb073e",
+    "OAI/NumberTheory/Jacobsthal/Siegel/LocalQuotientEquiv.lean": "306b6530ab0f7e0170f578eace856941843769c44e426a5b2d21ce3ccce20557",
+    "OAI/NumberTheory/Jacobsthal/Siegel/LogarithmicForm.lean": "9a9f4f3f51822c15f3e5db0e35074512db251e7ab6430adf819c32256671798c",
     "OAI/NumberTheory/Jacobsthal/Siegel/LogarithmicFormLemma.lean": "d002eb6bd9ce8da6b7179c4dfe748de61635a1663da6c9f2ae3c6e26acc4ea47",
     "OAI/NumberTheory/Jacobsthal/Siegel/Main.lean": "78f9267ab2e75ead7a6a3dc1331a80fbc921e64ff2435afd965e8c51a60e2fdf",
     "OAI/NumberTheory/Jacobsthal/Siegel/MapIInfPrimesOver.lean": "ccfb99e0778ad17d5daee7de48345b448dc998ad38d323138d8ddea75ded0aae",
     "OAI/NumberTheory/Jacobsthal/Siegel/MellinConvergentTopIndicator.lean": "fbfc05a3cac6977e9804391e46c6359242600df16c12bb8de21f0ad5137473e7",
-    "OAI/NumberTheory/Jacobsthal/Siegel/MonicSMulRegularQuotientMapC.lean": "33f5fa7c6bf9c2cdb33c389e9002049a4bfc608208e2d23fbc642a8ea08ba1ee",
+    "OAI/NumberTheory/Jacobsthal/Siegel/MonicSMulRegularQuotientMapC.lean": "0111eac13bf128648168f89c4972ecc083d686d001f2800d46f1e516ee892763",
     "OAI/NumberTheory/Jacobsthal/Siegel/NormalizationPresentationLocalEquiv.lean": "aea5021967c0a062a2e377f62f32563fd22e61e577b87b5c226f182aa202e090",
     "OAI/NumberTheory/Jacobsthal/Siegel/NormalizedHomogeneousChartEquation.lean": "1743e41184328dbb5be804544dd60da0f45bfee2383c4eaa070e1be56367b190",
     "OAI/NumberTheory/Jacobsthal/Siegel/NormalizedMasterBound.lean": "727b50905972f108e8839167bc2002d89d927bc3a56d12f906addf3a1db7a01b",
@@ -1836,7 +1835,7 @@
     "OAI/NumberTheory/Jacobsthal/Siegel/RectangularGradedPieceGeneratedByDegreeOne.lean": "6df59096b98b21eb8d13fc7591dde001fb0d909ca5199e1e3e7e41849446a6ed",
     "OAI/NumberTheory/Jacobsthal/Siegel/ResidueTensorQuotientAlgEquiv.lean": "037c67e4d9c7974231284dc2eb7e9229b3bd0081b33d59f19f6a2429b76ae498",
     "OAI/NumberTheory/Jacobsthal/Siegel/RestrictWeightSortedEquiv.lean": "8949f66b022128b43866438ad234e0ffb58ed1d8df82230f09a1701317d1036f",
-    "OAI/NumberTheory/Jacobsthal/Siegel/SqrtPairFrobeniusDirections.lean": "3d644007ea008dd4b3524dd391bbcc3bf3d8670c3ca4ad2a6a7e6752429193ee",
+    "OAI/NumberTheory/Jacobsthal/Siegel/SqrtPairFrobeniusDirections.lean": "63bcc95ad5b5a5aef4300e099272a33f6f8ec1ff2290a8174e374adda65bc75c",
     "OAI/NumberTheory/Jacobsthal/Siegel/SqrtTwoField.lean": "7566a9fbaa03cb00118b34bcbf12e3d7e4e9f03f358556598254f15e9ad3f9a0",
     "OAI/NumberTheory/Jacobsthal/Siegel/SumCardFilterSumMin.lean": "eb0c9b33830c276286413d35c80f5b062ab8268842a486b106d2ecf64a04b0ad",
     "OAI/NumberTheory/Jacobsthal/Siegel/SumCharacterPeriodZero.lean": "792bb495388f8d4f1e24e272c10a4cf295c9f82b47253cb30cc4a99d83c5e3c9",
@@ -1868,7 +1867,7 @@
     "OAI/NumberTheory/Jacobsthal/Sieve/DivisorLogGrowth.lean": "0479b657a5a343344b229025265e018282d8754b9b4a94431118ac664918a2a3",
     "OAI/NumberTheory/Jacobsthal/Sieve/EndpointCofactorSplit.lean": "f8203f4b6c0a1842f911aebf4a28f264e61393c852dd0b84f62a68db1b5f6cd6",
     "OAI/NumberTheory/Jacobsthal/Sieve/ErasedCofactorGeometry.lean": "eaec4dec10258dba1d3fc52dd1a8cda787ba9e7825badd2b8a77b6dbc4da2663",
-    "OAI/NumberTheory/Jacobsthal/Sieve/EulerProductRatio.lean": "5c64771c4109997d034ccd69cdc98d81213bee12054d1fc84b7af661d01ebb55",
+    "OAI/NumberTheory/Jacobsthal/Sieve/EulerProductRatio.lean": "f02dab996a26759b2ffcdf42ab09a848af9550d588f24502d858f0ffb6c6531d",
     "OAI/NumberTheory/Jacobsthal/Sieve/ExceptionalResidues.lean": "5a663af8452c265a1b2a580e87a5abd0586c2afe758d6aabd201718b1ecc3bcd",
     "OAI/NumberTheory/Jacobsthal/Sieve/ExponentialIntegral.lean": "091bf4e11db5475f1eb42785a5fed7e7e78ca5705ff7c812d5d7e3a9674fd738",
     "OAI/NumberTheory/Jacobsthal/Sieve/ExponentialMesh.lean": "9e0d486cb189d712b3f44e0efc4f886ad0789699a18497f06baf0a32dab5efe8",
@@ -1941,5 +1940,32 @@
     "vendor/AbsorptionCutoff/AbsorptionCutoff/Supercritical/RenewalApprox.lean": "236a3decae51cdbe8edc4cebdd2a005f6682aa8caa994e82fe98a13a8872efc4",
     "vendor/AbsorptionCutoff/AbsorptionCutoff/Supercritical/RenewalKernel.lean": "e4a4ed2c877fff041e5f954731334aa32a1e3838e8a9fa5b21f2b44b21140b9b",
     "vendor/AbsorptionCutoff/AbsorptionCutoff/Supercritical/RenewalSinc.lean": "67f198c07be9e3f2d0f31facf539e78f985c122aea94939bdd7150072217f349"
-  }
+  },
+  "source_recovery_original_oai_blob_mismatches": [],
+  "compatibility_changes": [
+    {
+      "path": "OAI/NumberTheory/Jacobsthal/Siegel/LocalQuotientEquiv.lean",
+      "change": "Disambiguate singleton set around algebraMap using explicit Set.singleton; no theorem type or hypotheses changed."
+    },
+    {
+      "path": "OAI/NumberTheory/Jacobsthal/Siegel/MonicSMulRegularQuotientMapC.lean",
+      "change": "Replace deprecated SetLike.not_le_iff_exists with IsConcreteLE.not_le_iff_exists."
+    },
+    {
+      "path": "OAI/NumberTheory/Jacobsthal/Siegel/LogarithmicForm.lean",
+      "change": "Replace same deprecated alias proactively."
+    },
+    {
+      "path": "OAI/NumberTheory/Jacobsthal/Estimates/ScalarErrorBudget.lean",
+      "change": "Replace deprecated MonoidHom.coe_coe with MonoidHom.coe_ofClass."
+    },
+    {
+      "path": "OAI/NumberTheory/Jacobsthal/Siegel/SqrtPairFrobeniusDirections.lean",
+      "change": "Replace deprecated MonoidHom.coe_coe with MonoidHom.coe_ofClass."
+    },
+    {
+      "path": "OAI/NumberTheory/Jacobsthal/Sieve/EulerProductRatio.lean",
+      "change": "Raise the local maxHeartbeats budget for int_mem_primeResidueSet from 200000 to 1000000 after deterministic whnf timeout on Lean4.35; same statement and proof."
+    }
+  ]
 }

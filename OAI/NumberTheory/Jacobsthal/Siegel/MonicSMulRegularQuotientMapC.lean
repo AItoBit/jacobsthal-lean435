@@ -320,7 +320,7 @@ theorem exists_add_not_mem_of_prime_antichain {R : Type*} [CommRing R]
       have hn : ¬ J ⊓ (s.erase P).inf id ≤ P := by
         rw [(hp P hP).inf_le]
         exact not_or.mpr ⟨hJ, hi⟩
-      obtain ⟨b, hb, hbp⟩ := SetLike.not_le_iff_exists.mp hn
+      obtain ⟨b, hb, hbp⟩ := IsConcreteLE.not_le_iff_exists.mp hn
       refine ⟨b, hb.1, ?_, (fun _ => hbp), (fun h => (h ha).elim)⟩
       intro Q hQ hQP
       exact (Finset.inf_le (f := id) (Finset.mem_erase.mpr ⟨hQP, hQ⟩)) hb.2

@@ -12,6 +12,19 @@ jobs:
       - uses: actions/checkout@v4
       - name: Recover pinned external StrongPNT source
         run: python3 scripts/bootstrap_strongpnt.py
+      - name: Restore incremental proof artifacts
+        id: proof-cache
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            .lake/build
+            vendor/PrimeNumberTheoremAnd/.lake/build
+            vendor/AbsorptionCutoff/.lake/build
+            external/StrongPNT/.lake/build
+          key: jac435-${{ hashFiles('lean-toolchain', 'lake-manifest.json') }}-${{ hashFiles('provenance.json', 'OAI/**/*.lean', 'vendor/**/*.lean', 'patches/*.patch') }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            jac435-${{ hashFiles('lean-toolchain', 'lake-manifest.json') }}-${{ hashFiles('provenance.json', 'OAI/**/*.lean', 'vendor/**/*.lean', 'patches/*.patch') }}-
+            jac435-${{ hashFiles('lean-toolchain', 'lake-manifest.json') }}-
       - uses: leanprover/lean-action@v1
         with:
           build-args: '--wfail OAI.NumberTheory.Jacobsthal.Main Audit'
@@ -29,3 +42,13 @@ jobs:
           name: axiom-report
           path: axiom-report.txt
           if-no-files-found: ignore
+      - name: Preserve incremental proof artifacts after success or failure
+        if: always() && steps.proof-cache.outputs.cache-primary-key != ''
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            .lake/build
+            vendor/PrimeNumberTheoremAnd/.lake/build
+            vendor/AbsorptionCutoff/.lake/build
+            external/StrongPNT/.lake/build
+          key: ${{ steps.proof-cache.outputs.cache-primary-key }}

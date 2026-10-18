@@ -325,7 +325,7 @@ theorem unitsMap_sixteen_mul_kernel_square {m : ℕ} [NeZero (16 * m)]
     rw [← Units.val_inj, Units.val_one, ZMod.unitsMap_def, Units.coe_map] at hu
     have hcast : ZMod.castHom hd (ZMod (8 * m)) u.val =
         ((u.val.val : ℤ) : ZMod (8 * m)) := by simp
-    rwa [MonoidHom.coe_coe, hcast, ← Int.cast_one, eq_comm,
+    rwa [MonoidHom.coe_ofClass, hcast, ← Int.cast_one, eq_comm,
       ZMod.intCast_eq_intCast_iff_dvd_sub] at hu
   obtain ⟨k, hk⟩ := hval
   have huval : u.val = 1 + (8 * m : ZMod (16 * m)) * (k : ZMod (16 * m)) := by

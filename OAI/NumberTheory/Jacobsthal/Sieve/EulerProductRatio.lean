@@ -95,6 +95,7 @@ theorem cast_int_residue (M t : ℕ) [NeZero M] (htM : t ∣ M) (n : ℤ) :
   have hh := congrArg (ZMod.castHom htM (ZMod t)) (ZMod.natCast_zmod_val (n : ZMod M))
   simpa only [map_natCast,map_intCast] using hh
 
+set_option maxHeartbeats 1000000 in
 theorem int_mem_primeResidueSet (P : Finset ℕ) (hP : ∀ p ∈ P,p.Prime)
     (E : ∀ p : ℕ,Finset (ZMod p)) (n : ℤ) :
     (n : ZMod (∏ p ∈ P,p)) ∈ primeResidueSet P hP E ↔ ∀ p ∈ P,(n : ZMod p) ∈ E p := by

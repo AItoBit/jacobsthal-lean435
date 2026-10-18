@@ -17,6 +17,11 @@ They are imported through `OAI.NumberTheory.Jacobsthal.Main`. Their statements
 and mathematical hypotheses are retained. `Audit.lean` checks both target names
 and prints their transitive axioms.
 
+The initial recovered 819 files matched all original Git blob hashes after LF
+normalization. The compatibility changes recorded in `provenance.json` currently
+disambiguate two singleton sets with `Set.singleton`, replace deprecated order
+and coercion API names, and raise one theorem-local elaboration heartbeat budget. These edits preserve the mathematical statements and hypotheses.
+
 ## Reproduce
 
 Lean is pinned to `v4.35.0-rc2`; Mathlib is pinned to
